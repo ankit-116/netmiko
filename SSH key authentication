@@ -1,0 +1,14 @@
+
+
+from netmiko import ConnectHandler
+
+my_device = {"host":"X.X.X.X","device_type": "linux","use_keys":"True","allow_agent":"True","ssh_config_file":"~/.ssh/new/internal/ankits-[internal]-2019-01-07.pub"}
+net_connect = ConnectHandler(**my_device)
+print(net_connect)
+
+
+
+Errors:
+
+raise Exception("Unparsable line {}".format(line))
+Exception: Unparsable line ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsPmwF1iep9t1rQZh7MANQlrqDYKYqO9fflWJVSHyQBqx5WIGT46yhoy1zCk2h0B4bWb9LpRTScwUggyBR+YYXftVOvxAilvNJPnyjkWtIii4MDAANEU1b5+dvMfSaC0Pn4/I+7Z3KjVH/8+tAj7htXiSG8gl9XzjPd9//a/TYpPeNd61F04ndYDjBt2Kukd4VvC77zZbaGyZeesF7NPTELG+wECJba67/MuEWhoNYFBegv6tHbsCNR73sR6/qV3Mwola6ohjv3i1YALEpndC7qjbedt4Xh+nyZnNYOPrJQK1wcvV7E07i15h+0rSkyfbkBWmC/0bNxpL/0a1BGlkH ankits-[internal]-2019-01-07
